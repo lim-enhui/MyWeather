@@ -26,11 +26,11 @@ struct City: Identifiable, Hashable {
         [
             .init(name: "Paris, France", latitude: 48.856788, longitude: 2.351088),
             .init(name: "Sydney, Australia", latitude: -33.872710, longitude: 151.205694),
-            .init(name: "Washington, DC", latitude: 38.895438, longitude: -77031281)
+            .init(name: "Singapore, Singapore", latitude: 1.364917, longitude: 103.822872)
         ]
     }
     
     static var mockCurrent: City {
-        .init(name: "Washington, DC", latitude: 38.895438, longitude: -77031281)
+        .init(name: "Singapore, Singapore", latitude: 1.364917, longitude: 103.822872)
     }
 }
