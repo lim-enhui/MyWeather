@@ -21,4 +21,16 @@ struct City: Identifiable, Hashable {
     var clLocation: CLLocation {
         CLLocation(latitude: latitude, longitude: longitude)
     }
+    
+    static var cities: [City] {
+        [
+            .init(name: "Paris, France", latitude: 48.856788, longitude: 2.351088),
+            .init(name: "Sydney, Australia", latitude: -33.872710, longitude: 151.205694),
+            .init(name: "Washington, DC", latitude: 38.895438, longitude: -77031281)
+        ]
+    }
+    
+    static var mockCurrent: City {
+        .init(name: "Washington, DC", latitude: 38.895438, longitude: -77031281)
+    }
 }
